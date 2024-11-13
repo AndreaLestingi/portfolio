@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio of Andrea Lestingi</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-800 shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Andrea Lestingi</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#experience" class="text-gray-300 hover:text-blue-400 transition duration-300">Experience</a></li>
+        <li><a href="#projects" class="text-gray-300 hover:text-blue-400 transition duration-300">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1525901544670-1f5113af9420');">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+      <div class="text-center text-white animate-fade-in">
+        <h2 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h2>
+        <p class="text-xl">Developer with experience in Java, Node.js, PHP, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mx-auto p-4">
+    <!-- Programming Experience -->
+    <section id="experience" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Programming Experience</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 rounded-3xl shadow p-6 transition transform hover:-translate-y-1 hover:shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Languages & Technologies</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li><strong>Java:</strong> 2 years</li>
+            <li><strong>Node.js:</strong> 2 years</li>
+            <li><strong>PHP:</strong> 1.5 years</li>
+            <li><strong>HTML/CSS/JavaScript:</strong> 2 years</li>
+            <li><strong>Spigot/Paper API:</strong> 2 years</li>
+            <li><strong>BungeeCord/Velocity:</strong> 2 months</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 rounded-3xl shadow p-6 transition transform hover:-translate-y-1 hover:shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+          <p>Expert in backend development, creating plugins for Minecraft servers, and managing server infrastructure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Projects</h2>
+
+      <!-- SkyNest Studios -->
+      <div class="bg-gray-800 shadow p-6 mb-8 transition transform hover:-translate-y-1 hover:shadow-lg rounded-3xl">
+        <h3 class="text-2xl font-semibold mb-2">SkyNest Studios</h3>
+        <p class="text-gray-300 mb-4"><strong>Role:</strong> Developer (Dev)</p>
+        <p class="mb-4">Focused on creating custom Minecraft plugins and managing server infrastructure.</p>
+        <h4 class="text-xl font-semibold mb-2">Responsibilities:</h4>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Minecraft Plugins:</strong> Development of custom plugins to enhance gameplay.</li>
+          <li><strong>VPS/Dedicated Server Configuration:</strong> Setting up and managing virtual and dedicated servers.</li>
+          <li><strong>Security Configuration:</strong> Implementing security measures for server protection.</li>
+          <li><strong>Pterodactyl Installation:</strong> Installing and configuring Pterodactyl for game server management.</li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://discord.gg/3Rh9kMKdvQ" class="text-blue-400 hover:underline">Discord: Join SkyNest Studios</a> | 
+          <a href="https://github.com/SkyNest-Studios" class="text-blue-400 hover:underline">GitHub Organization: SkyNest Studios</a>
+        </div>
+      </div>
+
+      <!-- PokeCube -->
+      <div class="bg-gray-800 rounded-3xl shadow p-6 transition transform hover:-translate-y-1 hover:shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">PokeCube</h3>
+        <p class="text-gray-300 mb-4"><strong>Role:</strong> Developer (Dev)</p>
+        <p class="mb-4">A modded Minecraft server with Pixelmon, enhancing the gaming experience with Pokémon-themed gameplay.</p>
+        <a href="https://discord.gg/pokecube" class="text-blue-400 hover:underline">Discord: Join PokeCube</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Andrea Lestingi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Styles for Animations -->
+  <style>
+    .animate-fade-in {
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</body>
+</html>
